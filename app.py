@@ -32,6 +32,9 @@ def opcao_invalida():
 def cadastrar_novo_restaurante():
     exibir_subtitulo('cadastro de novos restaurantes ')
     nome_do_restaurante = input('digite o nome do restaurante que deseja cadastrar ')
+    categoria = input(f'digite o nome da categoria do restaurante {nome_do_restaurante}: ')
+    dados_do_restaurante = {'nome':nome_do_restaurante, 'categoria':categoria, 'ativo':False}
+    restaurantes.append(dados_do_restaurante)
     restaurantes.append(nome_do_restaurante)
     print(f'o Restaurante {nome_do_restaurante} foi cadastrado com sucesso!')
     voltar_ao_menu_principal()

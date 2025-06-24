@@ -33,6 +33,7 @@ def opcao_invalida():
     
 
 def cadastrar_novo_restaurante():
+    '''Essa função é responsável por cadastrar um novo restaurante'''
     exibir_subtitulo('cadastro de novos restaurantes ')
     nome_do_restaurante = input('digite o nome do restaurante que deseja cadastrar ')
     categoria = input(f'digite o nome da categoria do restaurante {nome_do_restaurante}: ')
